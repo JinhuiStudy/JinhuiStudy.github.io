@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">아파트 관리자 API | 차단기 시스템</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://JinhuiStudy.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://JinhuiStudy.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://JinhuiStudy.github.io/docs/tutorial-basics/manager"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="아파트 관리자 API | 차단기 시스템"><meta data-rh="true" name="description" content="대시보드 API"><meta data-rh="true" property="og:description" content="대시보드 API"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://JinhuiStudy.github.io/docs/tutorial-basics/manager"><link data-rh="true" rel="alternate" href="https://JinhuiStudy.github.io/docs/tutorial-basics/manager" hreflang="en"><link data-rh="true" rel="alternate" href="https://JinhuiStudy.github.io/docs/tutorial-basics/manager" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="차단기 시스템 RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="차단기 시스템 Atom Feed"><link rel="stylesheet" href="/assets/css/styles.07386aa2.css">
-<script src="/assets/js/runtime~main.3c53b92a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ce936068.js" defer="defer"></script>
 <script src="/assets/js/main.5c71f24f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -358,103 +358,130 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="detail-1">Detail<a href="#detail-1" class="hash-link" aria-label="Direct link to Detail" title="Direct link to Detail">​</a></h3>
 <hr>
 <ol>
-<li>
-<p>요청 정보 [HTTP]</p>
-</li>
-<li>
-<p>요청 정보 [Header]</p>
-</li>
-<li>
-<p>요청 정보 [Query Parameter]</p>
-</li>
-<li>
-<p>응답 정보 [HTTP]</p>
-</li>
-<li>
-<p>응답 정보 [Body]</p>
-</li>
-<li>
-<p>응답 정보 [Field]</p>
-</li>
-<li>
-<p>CURL</p>
-</li>
+<li>요청 정보 [HTTP]</li>
 </ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GET /notice/1 HTTP/1.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInNjb3BlIjoiQURNSU4iLCJpc3MiOiJub21hZGxhYiIsImV4cCI6MTcwOTk3NDY2NiwidHlwZSI6IkFDQ0VTU19UT0tFTiJ9.mGyHCKi_VphUORr9uCCMBsEX2wsDZvmy5437TSltZok</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host: localhost:8080</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="2">
+<li>요청 정보 [Header]</li>
+</ol>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>토큰 정보</td></tr></tbody></table>
+<ol start="3">
+<li>요청 정보 [Path Parameter]</li>
+</ol>
+<p><code>/notice/{id}</code></p>
+<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td>공지 인덱스</td></tr></tbody></table>
+<ol start="4">
+<li>응답 정보 [HTTP]</li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">HTTP/1.1 200 OK</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Type: application/json;charset=UTF-8</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Length: 476</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;id&quot;:1,&quot;apartment&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;하늘채&quot;,&quot;region1DepthName&quot;:&quot;부산시&quot;,&quot;region2DepthName&quot;:&quot;사상구&quot;,&quot;region3DepthName&quot;:&quot;주례동&quot;,&quot;roadName&quot;:&quot;주례로 15&quot;,&quot;address&quot;:&quot;부산 사상구 주례로 15&quot;,&quot;zoneNo&quot;:&quot;18754&quot;,&quot;limitType&quot;:&quot;COUNT&quot;,&quot;limitTime&quot;:0,&quot;limitCount&quot;:10,&quot;networkCheckSecond&quot;:10,&quot;qna&quot;:true,&quot;faq&quot;:true,&quot;officetel&quot;:false,&quot;villa&quot;:false,&quot;notice&quot;:true},&quot;title&quot;:&quot;제목1&quot;,&quot;content&quot;:&quot;내용1&quot;,&quot;createDate&quot;:&quot;2024-03-08 17:57:45&quot;,&quot;updateDate&quot;:&quot;2024-03-08 17:57:45&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="5">
+<li>응답 정보 [Body]</li>
+</ol>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;id&quot;:1,&quot;apartment&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;하늘채&quot;,&quot;region1DepthName&quot;:&quot;부산시&quot;,&quot;region2DepthName&quot;:&quot;사상구&quot;,&quot;region3DepthName&quot;:&quot;주례동&quot;,&quot;roadName&quot;:&quot;주례로 15&quot;,&quot;address&quot;:&quot;부산 사상구 주례로 15&quot;,&quot;zoneNo&quot;:&quot;18754&quot;,&quot;limitType&quot;:&quot;COUNT&quot;,&quot;limitTime&quot;:0,&quot;limitCount&quot;:10,&quot;networkCheckSecond&quot;:10,&quot;qna&quot;:true,&quot;faq&quot;:true,&quot;officetel&quot;:false,&quot;villa&quot;:false,&quot;notice&quot;:true},&quot;title&quot;:&quot;제목1&quot;,&quot;content&quot;:&quot;내용1&quot;,&quot;createDate&quot;:&quot;2024-03-08 17:57:45&quot;,&quot;updateDate&quot;:&quot;2024-03-08 17:57:45&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="6">
+<li>응답 정보 [Field]</li>
+</ol>
+<table><thead><tr><th>Path</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>Number</code></td><td>인덱스</td></tr><tr><td><code>title</code></td><td><code>String</code></td><td>제목</td></tr><tr><td><code>content</code></td><td><code>String</code></td><td>내용</td></tr><tr><td><code>createDate</code></td><td><code>String</code></td><td>생성일</td></tr><tr><td><code>updateDate</code></td><td><code>String</code></td><td>수정일</td></tr><tr><td><code>apartment.id</code></td><td><code>Number</code></td><td>아파트 인덱스</td></tr><tr><td><code>apartment.name</code></td><td><code>String</code></td><td>이름</td></tr><tr><td><code>apartment.region1DepthName</code></td><td><code>String</code></td><td>고객사 지역명 1</td></tr><tr><td><code>apartment.region2DepthName</code></td><td><code>String</code></td><td>고객사 지역명 2</td></tr><tr><td><code>apartment.region3DepthName</code></td><td><code>String</code></td><td>고객사 지역명 3</td></tr><tr><td><code>apartment.roadName</code></td><td><code>String</code></td><td>도로명</td></tr><tr><td><code>apartment.address</code></td><td><code>String</code></td><td>주소</td></tr><tr><td><code>apartment.zoneNo</code></td><td><code>String</code></td><td>우편번호</td></tr><tr><td><code>apartment.limitType</code></td><td><code>String</code></td><td>제한 타입</td></tr><tr><td><code>apartment.limitTime</code></td><td><code>Number</code></td><td>제한 시간(분 단위)</td></tr><tr><td><code>apartment.limitCount</code></td><td><code>Number</code></td><td>제한 횟수</td></tr><tr><td><code>apartment.networkCheckSecond</code></td><td><code>Number</code></td><td>네트워크 체크 시간(초 단위)</td></tr><tr><td><code>apartment.officetel</code></td><td><code>Boolean</code></td><td>오피스텔 여부</td></tr><tr><td><code>apartment.villa</code></td><td><code>Boolean</code></td><td>빌라 여부</td></tr><tr><td><code>apartment.qna</code></td><td><code>Boolean</code></td><td>qna 사용 여부</td></tr><tr><td><code>apartment.notice</code></td><td><code>Boolean</code></td><td>공지 사용 여부</td></tr><tr><td><code>apartment.faq</code></td><td><code>Boolean</code></td><td>faq 사용 여부</td></tr></tbody></table>
+<ol start="7">
+<li>CURL</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ curl &#x27;http://localhost:8080/notice/1&#x27; -i -X GET \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -H &#x27;Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInNjb3BlIjoiQURNSU4iLCJpc3MiOiJub21hZGxhYiIsImV4cCI6MTcwOTk3NDY2NiwidHlwZSI6IkFDQ0VTU19UT0tFTiJ9.mGyHCKi_VphUORr9uCCMBsEX2wsDZvmy5437TSltZok&#x27;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="save-1">Save<a href="#save-1" class="hash-link" aria-label="Direct link to Save" title="Direct link to Save">​</a></h3>
 <hr>
 <ol>
-<li>
-<p>요청 정보 [HTTP]</p>
-</li>
-<li>
-<p>요청 정보 [Header]</p>
-</li>
-<li>
-<p>요청 정보 [Query Parameter]</p>
-</li>
-<li>
-<p>응답 정보 [HTTP]</p>
-</li>
-<li>
-<p>응답 정보 [Body]</p>
-</li>
-<li>
-<p>응답 정보 [Field]</p>
-</li>
-<li>
-<p>CURL</p>
-</li>
+<li>요청 정보 [HTTP]</li>
 </ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">POST /notice HTTP/1.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Type: application/json;charset=UTF-8</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyIiwic2NvcGUiOiJNRU1CRVJfQVBBUlRNRU5UIiwiaXNzIjoibm9tYWRsYWIiLCJleHAiOjE3MDk5NzQ3NDcsInR5cGUiOiJBQ0NFU1NfVE9LRU4ifQ.qvoIloZh7xve69KqJtIjX62s_5NsPTAZ47A46TdsjEA</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Length: 37</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host: localhost:8080</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="2">
+<li>요청 정보 [Header]</li>
+</ol>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>토큰 정보</td></tr></tbody></table>
+<ol start="3">
+<li>요청 정보 [Body]</li>
+</ol>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="4">
+<li>요청 정보 [Field]</li>
+</ol>
+<table><thead><tr><th>Path</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>title</code></td><td><code>String</code></td><td>제목</td></tr><tr><td><code>content</code></td><td><code>String</code></td><td>내용</td></tr></tbody></table>
+<ol start="5">
+<li>응답 정보 [HTTP]</li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">HTTP/1.1 200 OK</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Type: application/json;charset=UTF-8</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Length: 474</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;id&quot;:4,&quot;apartment&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;하늘채&quot;,&quot;region1DepthName&quot;:&quot;부산시&quot;,&quot;region2DepthName&quot;:&quot;사상구&quot;,&quot;region3DepthName&quot;:&quot;주례동&quot;,&quot;roadName&quot;:&quot;주례로 15&quot;,&quot;address&quot;:&quot;부산 사상구 주례로 15&quot;,&quot;zoneNo&quot;:&quot;18754&quot;,&quot;limitType&quot;:&quot;COUNT&quot;,&quot;limitTime&quot;:0,&quot;limitCount&quot;:10,&quot;networkCheckSecond&quot;:10,&quot;officetel&quot;:false,&quot;villa&quot;:false,&quot;notice&quot;:true,&quot;qna&quot;:true,&quot;faq&quot;:true},&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;,&quot;createDate&quot;:&quot;2024-03-08 17:59:07&quot;,&quot;updateDate&quot;:&quot;2024-03-08 17:59:07&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="6">
+<li>응답 정보 [Body]</li>
+</ol>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;id&quot;:4,&quot;apartment&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;하늘채&quot;,&quot;region1DepthName&quot;:&quot;부산시&quot;,&quot;region2DepthName&quot;:&quot;사상구&quot;,&quot;region3DepthName&quot;:&quot;주례동&quot;,&quot;roadName&quot;:&quot;주례로 15&quot;,&quot;address&quot;:&quot;부산 사상구 주례로 15&quot;,&quot;zoneNo&quot;:&quot;18754&quot;,&quot;limitType&quot;:&quot;COUNT&quot;,&quot;limitTime&quot;:0,&quot;limitCount&quot;:10,&quot;networkCheckSecond&quot;:10,&quot;officetel&quot;:false,&quot;villa&quot;:false,&quot;notice&quot;:true,&quot;qna&quot;:true,&quot;faq&quot;:true},&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;,&quot;createDate&quot;:&quot;2024-03-08 17:59:07&quot;,&quot;updateDate&quot;:&quot;2024-03-08 17:59:07&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="7">
+<li>응답 정보 [Field]</li>
+</ol>
+<table><thead><tr><th>Path</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>Number</code></td><td>인덱스</td></tr><tr><td><code>title</code></td><td><code>String</code></td><td>제목</td></tr><tr><td><code>content</code></td><td><code>String</code></td><td>내용</td></tr><tr><td><code>createDate</code></td><td><code>String</code></td><td>생성일</td></tr><tr><td><code>updateDate</code></td><td><code>String</code></td><td>수정일</td></tr><tr><td><code>apartment.id</code></td><td><code>Number</code></td><td>아파트 인덱스</td></tr><tr><td><code>apartment.name</code></td><td><code>String</code></td><td>이름</td></tr><tr><td><code>apartment.region1DepthName</code></td><td><code>String</code></td><td>고객사 지역명 1</td></tr><tr><td><code>apartment.region2DepthName</code></td><td><code>String</code></td><td>고객사 지역명 2</td></tr><tr><td><code>apartment.region3DepthName</code></td><td><code>String</code></td><td>고객사 지역명 3</td></tr><tr><td><code>apartment.roadName</code></td><td><code>String</code></td><td>도로명</td></tr><tr><td><code>apartment.address</code></td><td><code>String</code></td><td>주소</td></tr><tr><td><code>apartment.zoneNo</code></td><td><code>String</code></td><td>우편번호</td></tr><tr><td><code>apartment.limitType</code></td><td><code>String</code></td><td>제한 타입</td></tr><tr><td><code>apartment.limitTime</code></td><td><code>Number</code></td><td>제한 시간(분 단위)</td></tr><tr><td><code>apartment.limitCount</code></td><td><code>Number</code></td><td>제한 횟수</td></tr><tr><td><code>apartment.networkCheckSecond</code></td><td><code>Number</code></td><td>네트워크 체크 시간(초 단위)</td></tr><tr><td><code>apartment.officetel</code></td><td><code>Boolean</code></td><td>오피스텔 여부</td></tr><tr><td><code>apartment.villa</code></td><td><code>Boolean</code></td><td>빌라 여부</td></tr><tr><td><code>apartment.qna</code></td><td><code>Boolean</code></td><td>qna 사용 여부</td></tr><tr><td><code>apartment.notice</code></td><td><code>Boolean</code></td><td>공지 사용 여부</td></tr><tr><td><code>apartment.faq</code></td><td><code>Boolean</code></td><td>faq 사용 여부</td></tr></tbody></table>
+<ol start="8">
+<li>CURL</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ curl &#x27;http://localhost:8080/notice&#x27; -i -X POST \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -H &#x27;Content-Type: application/json;charset=UTF-8&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -H &#x27;Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyIiwic2NvcGUiOiJNRU1CRVJfQVBBUlRNRU5UIiwiaXNzIjoibm9tYWRsYWIiLCJleHAiOjE3MDk5NzQ3NDcsInR5cGUiOiJBQ0NFU1NfVE9LRU4ifQ.qvoIloZh7xve69KqJtIjX62s_5NsPTAZ47A46TdsjEA&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -d &#x27;{&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;}&#x27;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-1">Update<a href="#update-1" class="hash-link" aria-label="Direct link to Update" title="Direct link to Update">​</a></h3>
 <hr>
 <ol>
-<li>
-<p>요청 정보 [HTTP]</p>
-</li>
-<li>
-<p>요청 정보 [Header]</p>
-</li>
-<li>
-<p>요청 정보 [Query Parameter]</p>
-</li>
-<li>
-<p>응답 정보 [HTTP]</p>
-</li>
-<li>
-<p>응답 정보 [Body]</p>
-</li>
-<li>
-<p>응답 정보 [Field]</p>
-</li>
-<li>
-<p>CURL</p>
-</li>
+<li>요청 정보 [HTTP]</li>
 </ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">PUT /notice/2 HTTP/1.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Type: application/json;charset=UTF-8</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInNjb3BlIjoiQURNSU4iLCJpc3MiOiJub21hZGxhYiIsImV4cCI6MTcwOTk3NDY2NiwidHlwZSI6IkFDQ0VTU19UT0tFTiJ9.mGyHCKi_VphUORr9uCCMBsEX2wsDZvmy5437TSltZok</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Length: 51</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host: localhost:8080</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;title&quot;:&quot;modify-title&quot;,&quot;content&quot;:&quot;modify-content&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="2">
+<li>요청 정보 [Header]</li>
+</ol>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>토큰 정보</td></tr></tbody></table>
+<ol start="3">
+<li>요청 정보 [Path Parameter]</li>
+</ol>
+<p><code>/notice/{id}</code></p>
+<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td>공지사항 인덱스</td></tr></tbody></table>
+<ol start="4">
+<li>요청 정보 [Body]</li>
+</ol>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;title&quot;:&quot;modify-title&quot;,&quot;content&quot;:&quot;modify-content&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="5">
+<li>요청 정보 [Field]</li>
+</ol>
+<table><thead><tr><th>Path</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>title</code></td><td><code>String</code></td><td>제목</td></tr><tr><td><code>content</code></td><td><code>String</code></td><td>내용</td></tr></tbody></table>
+<ol start="6">
+<li>응답 정보 [HTTP]</li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">HTTP/1.1 200 OK</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Type: application/json;charset=UTF-8</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Content-Length: 488</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;id&quot;:2,&quot;apartment&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;하늘채&quot;,&quot;region1DepthName&quot;:&quot;부산시&quot;,&quot;region2DepthName&quot;:&quot;사상구&quot;,&quot;region3DepthName&quot;:&quot;주례동&quot;,&quot;roadName&quot;:&quot;주례로 15&quot;,&quot;address&quot;:&quot;부산 사상구 주례로 15&quot;,&quot;zoneNo&quot;:&quot;18754&quot;,&quot;limitType&quot;:&quot;COUNT&quot;,&quot;limitTime&quot;:0,&quot;limitCount&quot;:10,&quot;networkCheckSecond&quot;:10,&quot;qna&quot;:true,&quot;faq&quot;:true,&quot;officetel&quot;:false,&quot;villa&quot;:false,&quot;notice&quot;:true},&quot;title&quot;:&quot;modify-title&quot;,&quot;content&quot;:&quot;modify-content&quot;,&quot;createDate&quot;:&quot;2024-03-08 17:57:45&quot;,&quot;updateDate&quot;:&quot;2024-03-08 17:57:45&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="7">
+<li>응답 정보 [Body]</li>
+</ol>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{&quot;id&quot;:2,&quot;apartment&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;하늘채&quot;,&quot;region1DepthName&quot;:&quot;부산시&quot;,&quot;region2DepthName&quot;:&quot;사상구&quot;,&quot;region3DepthName&quot;:&quot;주례동&quot;,&quot;roadName&quot;:&quot;주례로 15&quot;,&quot;address&quot;:&quot;부산 사상구 주례로 15&quot;,&quot;zoneNo&quot;:&quot;18754&quot;,&quot;limitType&quot;:&quot;COUNT&quot;,&quot;limitTime&quot;:0,&quot;limitCount&quot;:10,&quot;networkCheckSecond&quot;:10,&quot;qna&quot;:true,&quot;faq&quot;:true,&quot;officetel&quot;:false,&quot;villa&quot;:false,&quot;notice&quot;:true},&quot;title&quot;:&quot;modify-title&quot;,&quot;content&quot;:&quot;modify-content&quot;,&quot;createDate&quot;:&quot;2024-03-08 17:57:45&quot;,&quot;updateDate&quot;:&quot;2024-03-08 17:57:45&quot;}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="8">
+<li>응답 정보 [Field]</li>
+</ol>
+<table><thead><tr><th>Path</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>Number</code></td><td>인덱스</td></tr><tr><td><code>title</code></td><td><code>String</code></td><td>제목</td></tr><tr><td><code>content</code></td><td><code>String</code></td><td>내용</td></tr><tr><td><code>createDate</code></td><td><code>String</code></td><td>생성일</td></tr><tr><td><code>updateDate</code></td><td><code>String</code></td><td>수정일</td></tr><tr><td><code>apartment.id</code></td><td><code>Number</code></td><td>아파트 인덱스</td></tr><tr><td><code>apartment.name</code></td><td><code>String</code></td><td>이름</td></tr><tr><td><code>apartment.region1DepthName</code></td><td><code>String</code></td><td>고객사 지역명 1</td></tr><tr><td><code>apartment.region2DepthName</code></td><td><code>String</code></td><td>고객사 지역명 2</td></tr><tr><td><code>apartment.region3DepthName</code></td><td><code>String</code></td><td>고객사 지역명 3</td></tr><tr><td><code>apartment.roadName</code></td><td><code>String</code></td><td>도로명</td></tr><tr><td><code>apartment.address</code></td><td><code>String</code></td><td>주소</td></tr><tr><td><code>apartment.zoneNo</code></td><td><code>String</code></td><td>우편번호</td></tr><tr><td><code>apartment.limitType</code></td><td><code>String</code></td><td>제한 타입</td></tr><tr><td><code>apartment.limitTime</code></td><td><code>Number</code></td><td>제한 시간(분 단위)</td></tr><tr><td><code>apartment.limitCount</code></td><td><code>Number</code></td><td>제한 횟수</td></tr><tr><td><code>apartment.networkCheckSecond</code></td><td><code>Number</code></td><td>네트워크 체크 시간(초 단위)</td></tr><tr><td><code>apartment.officetel</code></td><td><code>Boolean</code></td><td>오피스텔 여부</td></tr><tr><td><code>apartment.villa</code></td><td><code>Boolean</code></td><td>빌라 여부</td></tr><tr><td><code>apartment.qna</code></td><td><code>Boolean</code></td><td>qna 사용 여부</td></tr><tr><td><code>apartment.notice</code></td><td><code>Boolean</code></td><td>공지 사용 여부</td></tr><tr><td><code>apartment.faq</code></td><td><code>Boolean</code></td><td>faq 사용 여부</td></tr></tbody></table>
+<ol start="9">
+<li>CURL</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ curl &#x27;http://localhost:8080/notice/2&#x27; -i -X PUT \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -H &#x27;Content-Type: application/json;charset=UTF-8&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -H &#x27;Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInNjb3BlIjoiQURNSU4iLCJpc3MiOiJub21hZGxhYiIsImV4cCI6MTcwOTk3NDY2NiwidHlwZSI6IkFDQ0VTU19UT0tFTiJ9.mGyHCKi_VphUORr9uCCMBsEX2wsDZvmy5437TSltZok&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -d &#x27;{&quot;title&quot;:&quot;modify-title&quot;,&quot;content&quot;:&quot;modify-content&quot;}&#x27;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="delete-1">Delete<a href="#delete-1" class="hash-link" aria-label="Direct link to Delete" title="Direct link to Delete">​</a></h3>
 <hr>
 <ol>
-<li>
-<p>요청 정보 [HTTP]</p>
-</li>
-<li>
-<p>요청 정보 [Header]</p>
-</li>
-<li>
-<p>요청 정보 [Query Parameter]</p>
-</li>
-<li>
-<p>응답 정보 [HTTP]</p>
-</li>
-<li>
-<p>응답 정보 [Body]</p>
-</li>
-<li>
-<p>응답 정보 [Field]</p>
-</li>
-<li>
-<p>CURL</p>
-</li>
+<li>요청 정보 [HTTP]</li>
 </ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">DELETE /notice/3 HTTP/1.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInNjb3BlIjoiQURNSU4iLCJpc3MiOiJub21hZGxhYiIsImV4cCI6MTcwOTk3NDY2NiwidHlwZSI6IkFDQ0VTU19UT0tFTiJ9.mGyHCKi_VphUORr9uCCMBsEX2wsDZvmy5437TSltZok</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host: localhost:8080</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="2">
+<li>요청 정보 [Header]</li>
+</ol>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td><code>Authorization</code></td><td>토큰 정보</td></tr></tbody></table>
+<ol start="3">
+<li>요청 정보 [Path Parameter]</li>
+</ol>
+<p><code>/notice/{id}</code></p>
+<table><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td>공지사항 인덱스</td></tr></tbody></table>
+<ol start="4">
+<li>응답 정보 [HTTP]</li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-http codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">HTTP/1.1 200 OK</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="5">
+<li>CURL</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ curl &#x27;http://localhost:8080/notice/3&#x27; -i -X DELETE \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    -H &#x27;Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInNjb3BlIjoiQURNSU4iLCJpc3MiOiJub21hZGxhYiIsImV4cCI6MTcwOTk3NDY2NiwidHlwZSI6IkFDQ0VTU19UT0tFTiJ9.mGyHCKi_VphUORr9uCCMBsEX2wsDZvmy5437TSltZok&#x27;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="설정-api">설정 API<a href="#설정-api" class="hash-link" aria-label="Direct link to 설정 API" title="Direct link to 설정 API">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-limit">Update Limit<a href="#update-limit" class="hash-link" aria-label="Direct link to Update Limit" title="Direct link to Update Limit">​</a></h3>
 <hr>
